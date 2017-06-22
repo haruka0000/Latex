@@ -1,0 +1,68 @@
+\documentclass[11pt]{jsarticle}
+%　パッケージ
+
+% 正しいA4サイズを余白設定付きで使う設定
+% 以下のパッケージのコメントに　[　目的　] と記載されているものは、セットで用いる
+% ドライバを指定，余白の設定
+\usepackage[driver=dvipdfm,
+						top=10truemm,
+						bottom=18truemm,
+						left=20truemm,
+						right=20truemm]{geometry}
+\usepackage[dvipdfmx]{graphicx}		% 画像用
+\usepackage[noalphabet]{pxchfon}	% フォント指定用
+\setminchofont[0]{msmincho.ttc} 	% ＭＳ 明朝
+\setgothicfont[0]{msgothic.ttc}		% ＭＳ ゴシック
+\usepackage[utf8]{inputenc}	% [記号文字化けを防ぐ]
+\usepackage[T1]{fontenc}		% [記号文字化けを防ぐ]
+\usepackage{lmodern}		% [記号文字化けを防ぐ](Latin Modern フォントを使う)
+\usepackage{ascmac} 		% 枠囲み(例：itembox)
+\usepackage{enumerate}	% 数式
+%\usepackage{listings}		% [ソースコード挿入] jlistings.styが必要
+%\usepackage{listings,jlisting} % [ソースコード挿入] jlistings.styが必要
+\usepackage{amsmath} 		% 行列式の記述用
+
+% ソースコードのスタイルの設定
+\lstset{%
+  language={},
+  basicstyle={\small},%
+  identifierstyle={\small},%
+  commentstyle={\small\itshape},%
+  keywordstyle={\small\bfseries},%
+  ndkeywordstyle={\small},%
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex%
+}
+
+
+%% タイトルの設定
+%opening
+\title{レポート用サンプル}
+\date{2017年06月20日}
+\author{NAME}
+
+\begin{document}
+	\maketitle
+  \section{目的}
+
+  \section{課題}
+		\begin{itembox}[l]{課題1}
+			問題文
+		\end{itembox}
+
+  \section{考察}
+
+	% 参考文献
+  \begin{thebibliography}{1}
+  	\bibitem{sankou01} 「書籍」 著者 著 (2003年10月，　XXXXX　発行)
+  \end{thebibliography}
+\end{document}
