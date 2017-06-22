@@ -1,4 +1,4 @@
-\documentclass[11pt]{jsarticle}
+\documentclass[a4j,11pt]{jsarticle}
 %　パッケージ
 
 % 正しいA4サイズを余白設定付きで使う設定
@@ -21,7 +21,9 @@
 %\usepackage{listings}		% [ソースコード挿入] jlistings.styが必要
 %\usepackage{listings,jlisting} % [ソースコード挿入] jlistings.styが必要
 \usepackage{amsmath} 		% 行列式の記述用
+\usepackage{comment}		% 複数行コメントアウト
 
+\begin{comment}
 % ソースコードのスタイルの設定
 \lstset{%
   language={},
@@ -42,7 +44,7 @@
   numbersep=1zw,%
   lineskip=-0.5ex%
 }
-
+\end{comment}
 
 %% タイトルの設定
 %opening
